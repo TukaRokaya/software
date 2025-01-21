@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Solutions - Your partner in solving complex engineering problems. Learn more about CTVET courses and explore our solutions.">
     <title>Software Solutions</title>
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -14,6 +15,9 @@
         }
         .navbar {
             background-color: #2c3e50;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         .navbar-brand {
             font-weight: bold;
@@ -73,11 +77,11 @@
         .hero-section .btn:hover {
             background-color: #c0392b;
         }
-        .solutions-section {
+        .solutions-section, .contact-section, .about-section {
             padding: 4rem 0;
             background-color: #fff;
         }
-        .solutions-section h2 {
+        .solutions-section h2, .about-section h2, .contact-section h2 {
             font-size: 2.5rem;
             color: #2c3e50;
             margin-bottom: 2rem;
@@ -91,6 +95,7 @@
             justify-content: center;
             gap: 2rem;
             margin-top: 3rem;
+            flex-wrap: wrap;
         }
         .solution-box {
             background-color: #fff;
@@ -107,22 +112,9 @@
             color: #2c3e50;
             margin-bottom: 1rem;
         }
-        .solution-box p {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-        }
         .solution-box:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-        }
-        .contact-section, .about-section {
-            padding: 4rem 0;
-            background-color: #fff;
-        }
-        .contact-section h2, .about-section h2 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            margin-bottom: 2rem;
         }
         footer {
             background-color: #2c3e50;
@@ -139,7 +131,6 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">Software Solutions</a>
@@ -148,30 +139,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#solutions">Solutions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-
-                <!-- Search Box -->
                 <form class="d-flex search-form">
-                    <input type="text" placeholder="Search..." aria-label="Search">
+                    <input type="text" placeholder="Search..." aria-label="Search Field">
                     <button type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <div class="hero-section">
         <div>
             <h1>Software Engineering Solutions</h1>
@@ -180,31 +160,24 @@
         </div>
     </div>
 
-    <!-- Solutions Section -->
     <section id="solutions" class="solutions-section">
         <div class="container text-center">
             <h2>Question Solutions</h2>
-            <p>Explore practical examples of solving engineering Question:</p>
-            <p class="mt-3">2081 - 2078 = 3</p>
-            <p>Our solutions are designed to simplify complex calculations and provide clear answers.</p>
-
-            <!-- Three Beautiful Boxes -->
+            <p>Explore solutions for engineering problems with clear calculations and explanations.</p>
             <div class="solution-boxes">
-
                 <div class="solution-box">
                     <h3>2081</h3>
                     <p><a href="2081.html">First equation value: 2081</a></p>
                 </div>
-
                 <div class="solution-box">
                     <h3>2080</h3>
-                    <p><a href="quation.html">First equation value: 2080Second equation value: 2080</a></p>
+                    <p><a href="quation1.html">First equation value: 2080, Second equation value: 2080</a></p>
                 </div>
                 <div class="solution-box">
                     <h3>2079</h3>
                     <p><a href="2079.html">Result of the operation: 2079</a></p>
                 </div>
-                 <div class="solution-box">
+                <div class="solution-box">
                     <h3>2078</h3>
                     <p><a href="s2078.html">Result of the operation: 2078</a></p>
                 </div>
@@ -212,32 +185,37 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container text-center">
             <h2>About CTVET Courses</h2>
-            <p>The CTVET (Council for Technical and Vocational Education and Training) courses offer practical education and training for students to equip them with the skills needed in various technical and vocational fields. These courses focus on providing hands-on experience, industry-relevant knowledge, and the necessary qualifications to succeed in the workforce. Whether it’s engineering, IT, or another technical discipline, CTVET courses prepare students for real-world challenges and careers.</p>
+            <p>The CTVET (Council for Technical and Vocational Education and Training) courses offer practical education and training for students...</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container text-center">
             <h2>Contact Us</h2>
-            <p>Get in touch with us through the following channels:</p>
             <p><strong>Facebook:</strong> <a href="https://facebook.com/yourpage" target="_blank">Visit our Facebook page</a></p>
             <p><strong>Phone Number:</strong> +222222</p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="text-center">
         <div class="container">
             <p>&copy; 2025 Software Solutions. All rights reserved. <a href="#">Privacy Policy</a></p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
